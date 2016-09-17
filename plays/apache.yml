@@ -1,0 +1,10 @@
+---
+- hosts: all
+  remote_user: ubuntu
+  sudo: yes
+  tasks:
+  - name: install apache httpd
+    apt: name=apache2 state=present
+
+
+ 
